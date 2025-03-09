@@ -1,0 +1,26 @@
+{
+    "preprocessing": {
+      "remove_stopwords": true,
+      "lowercase": true,
+      "vocab_size": 5000,
+      "max_sequence_length": 100
+    },
+    "training": {
+      "learning_rate": 0.01,
+      "batch_size": 32,
+      "epochs": 10,
+      "loss_function": "cross_entropy",
+      "optimizer": "adam"
+    },
+    "data": {
+      "train_data_path": "data/train.csv",
+      "test_data_path": "data/test.csv",
+      "save_model_path": "models/saved_model.pth"
+    },
+    "model": {
+      "hidden_layers": [64, 32],
+      "activation": "relu",
+      "dropout": 0.2
+    }
+  }
+  
